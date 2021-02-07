@@ -12,7 +12,7 @@ let isValid = function (s) {
     obj = {
       '(': ')',
       '[': ']',
-      '{': 's}'
+      '{': '}'
     },
     sizeArr = inputArr.length;
 
