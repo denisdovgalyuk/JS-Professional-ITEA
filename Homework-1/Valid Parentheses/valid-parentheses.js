@@ -17,9 +17,11 @@ let isValid = function (s) {
     sizeArr = inputArr.length;
 
   for (key in obj) {
-    for (i = 0; i < sizeArr; i += 1) {
-      if ((inputArr[i] === key) && (inputArr[i + 1] === obj[key])) {
-        answer = true;
+    if (obj.hasOwnProperty(key)) {
+      for (i = 0; i < sizeArr; i += 1) {
+        if ((inputArr[i] === key) && (inputArr[i + 1] === obj[key])) {
+          answer = true;
+        }
       }
     }
   }
